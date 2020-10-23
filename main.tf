@@ -1,7 +1,8 @@
-# Configure docker provider
-#
-# https://www.terraform.io/docs/providers/docker/index.html
-
-provider "docker" {
-  version = "2.7"
+terraform {
+  required_providers {
+    docker = {
+      source = "terraform-providers/docker"
+    }
+  }
+  required_version = ">= 0.13"
 }
